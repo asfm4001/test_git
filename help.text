@@ -1,0 +1,22 @@
+//檢視目前git版本
+git --version
+
+//檢視目前git配置
+git config --list
+
+//將目前資料夾設定為git repository
+git init
+
+//檢視目前工作環境(working director)
+git status			
+
+//將hello.py加入暫存區(staging area)
+//確認修改後須再add
+git add hello.py		
+
+//將暫存區上傳至檔案區(repositories),備註"新增了 hello.py"
+git commit -m "新增了 hello.py"	
+
+//檢視現在檔案與上次上傳至檔案區的差異
+git diff
+
