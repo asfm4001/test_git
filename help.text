@@ -4,7 +4,7 @@ git --version
 //檢視目前git配置
 git config --list
 
-//將目前資料夾設定為git repository
+//將目前資料夾設定為git工作區
 git init
 
 //檢視目前工作環境(working director)
@@ -14,9 +14,16 @@ git status
 //確認修改後須再add
 git add hello.py		
 
+//放棄目前hello.py中的修改(未上傳檔案區之前)
+git checkout -- hello.py
+
+//將hello.py從暫存區刪除
+git rm --cached hello.py
+
 //將暫存區上傳至檔案區(repositories),備註"新增了 hello.py"
 git commit -m "新增了 hello.py"	
 
 //檢視現在檔案與上次上傳至檔案區的差異
 git diff
 
+//
